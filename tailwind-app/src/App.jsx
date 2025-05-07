@@ -2,16 +2,16 @@ import './App.css'
 import Card from './Card'
 
 function App() {
-  // const products = [
-  //   {
-  //     name: "Electronic Frozen Soap",
-  //     model: "978-1-894542-44-9",
-  //     hexColor: "#494719",
-  //     b64Image: "https://picsum.photos/seed/5htb27xeX/640/480",
-  //     properties: "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
-  //   },
-  //   {
-  //     name: "Unbranded Fresh Shoes",
+ //const products = [
+ //   {
+ //    name: "Electronic Frozen Soap",
+ //    model: "978-1-894542-44-9",
+ //     hexColor: "#494719",
+ //     b64Image: "https://picsum.photos/seed/5htb27xeX/640/480",
+ //    properties: "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+ //   },
+ //   {
+ //     name: "Unbranded Fresh Shoes",
   //     model: "978-1-905099-69-6",
   //     b64Image: "https://picsum.photos/seed/ozuQiMyzNK/640/480",
   //     properties: "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
@@ -55,10 +55,36 @@ function App() {
   return (
     <>
     <div className="bg-orange-500 p-8 grid grid-cols-4 gap-4">
-      <div>
-      <Card title="Nintendo switch 2" paragraph="sobrevalorada consola que cuesta lo mismo que un comedor para 4 personas, una laptop gamer de entrada, un viaje a cancún una tv de 70 pulgadas o un diplomado de titulación"/>
+      <div className=''>
+      <Card props={{
+        image: "https://picsum.photos/seed/Y5knt1/640/480",
+        title: "Intelligent Metal Pants",
+        paragraph: "New range of formal shirts...",
+        productRef: "978-1-84836-342-7"
+      }} />
+
+      <Card props={{
+        image: "https://picsum.photos/seed/5htb27xeX/640/480",
+        title: "Electronic Frozen Soap",
+        paragraph: "New range of formal shirts...",
+        productRef: "978-1-894542-44-9"
+      }} 
+      />
+
+      <Card props={{
+        image: "https://picsum.photos/seed/5htb27xeX/640/480",
+        title: "Electronic Frozen Soap",
+        paragraph: "New range of formal shirts...",
+        productRef: "978-1-894542-44-9"
+      }} 
+      />
+
+    
+
       </div>
     </div>
+   
+
     </>
   )
 }
